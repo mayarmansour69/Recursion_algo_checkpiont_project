@@ -1,0 +1,29 @@
+ALGORITHM  IsPalindrome
+
+
+VAR
+
+    Input:= word (string)
+    Output := isPalindrome (boolean)
+
+
+BEGIN
+     isPalindrome = true
+    left := 0
+    right := (length - 1)
+
+
+    WHILE left < right DO
+        IF word[left] != word[right] THEN
+            isPalindrome = false
+            BREAK
+        END IF
+        left := left + 1
+        right := right - 1
+    END WHILE
+    WRITE(isPalindrome)
+END
+
+
+   
+
